@@ -10,8 +10,8 @@ Vagrant.configure("2") do |config|
   config.vm.provision "shell", inline: <<-SHELL
     set -x
 
-    #apt-get update
-    #apt-get upgrade -y
+    apt-get update
+    apt-get upgrade -y
     apt-get install -y openjdk-8-jdk
   SHELL
 
